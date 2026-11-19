@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca de componentes UI para gestión de rescates y adopciones animales.">
+    <title>Rescue UI Kit | Design System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Rescue UI Kit</h1>
+            <p>Biblioteca de componentes para gestión de rescates y adopciones</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="seccion">
+            <h2>1. Botones</h2>
+            <p>Componentes para ejecutar acciones dentro del sistema.</p>
+
+            <div class="grupo-componentes">
+                <button class="btn btn-primario">Registrar rescate</button>
+                <button class="btn btn-secundario">Consultar casos</button>
+                <button class="btn btn-peligro">Eliminar registro</button>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>2. Formularios</h2>
+            <p>Campos para ingresar información de los animales rescatados.</p>
+
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre del animal</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Ingrese el nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="especie">Especie</label>
+                    <select id="especie" name="especie">
+                        <option value="">Seleccione una especie</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción del caso</label>
+                    <input type="text" id="descripcion" name="descripcion"
+                           placeholder="Describa el caso">
+                </div>
+            </form>
+        </section>
+
+        <section class="seccion">
+            <h2>3. Tarjetas de información</h2>
+            <p>Componentes para presentar los datos de animales rescatados.</p>
+
+            <div class="grupo-tarjetas">
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Max</h3>
+                        <p><strong>Especie:</strong> Perro</p>
+                        <p><strong>Edad:</strong> 2 años</p>
+                        <span class="badge badge-alta">Urgencia alta</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Luna</h3>
+                        <p><strong>Especie:</strong> Gato</p>
+                        <p><strong>Edad:</strong> 1 año</p>
+                        <span class="badge badge-media">Urgencia media</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="tarjeta-contenido">
+                        <h3>Rocky</h3>
+                        <p><strong>Especie:</strong> Perro</p>
+                        <p><strong>Edad:</strong> 3 años</p>
+                        <span class="badge badge-baja">Urgencia baja</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>4. Alertas y estados</h2>
+            <p>Etiquetas visuales para identificar la situación de cada caso.</p>
+
+            <div class="grupo-componentes">
+                <span class="badge badge-alta">Alta</span>
+                <span class="badge badge-media">Media</span>
+                <span class="badge badge-baja">Baja</span>
+                <span class="badge badge-exito">Adoptado</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Rescue UI Kit | Design System - Actividad #5</p>
+        <p>Desarrollo de Sistemas Informáticos - UTM 2026</p>
+    </footer>
+
+</body>
+</html>

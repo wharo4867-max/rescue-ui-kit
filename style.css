@@ -1,0 +1,269 @@
+
+/* =========================================
+   RESCUE UI KIT - DESIGN SYSTEM
+   Actividad #5 - UTM
+   ========================================= */
+
+/* 1. Variables de colores corporativos */
+:root {
+    --color-primario: #2563a6;
+    --color-secundario: #64748b;
+    --color-exito: #198754;
+    --color-error: #dc3545;
+    --color-advertencia: #f0a202;
+    --color-fondo: #f1f5f9;
+    --color-blanco: #ffffff;
+    --color-texto: #263445;
+    --color-borde: #d5dde6;
+
+    --fuente-principal: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Configuración general y modelo de cajas */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 3. Encabezado */
+.encabezado {
+    padding: 35px 0;
+    color: var(--color-blanco);
+    text-align: center;
+    background: linear-gradient(135deg, #2563a6, #174477);
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.encabezado p {
+    margin-bottom: 0;
+}
+
+/* 4. Secciones */
+.seccion {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.seccion h2 {
+    margin-top: 0;
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 10px;
+}
+
+/* 5. Botones reutilizables */
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--color-advertencia);
+    outline-offset: 3px;
+}
+
+.btn-primario {
+    color: var(--color-blanco);
+    background-color: var(--color-primario);
+}
+
+.btn-primario:hover {
+    background-color: #174477;
+}
+
+.btn-secundario {
+    color: var(--color-blanco);
+    background-color: var(--color-secundario);
+}
+
+.btn-secundario:hover {
+    background-color: #475569;
+}
+
+.btn-peligro {
+    color: var(--color-blanco);
+    background-color: var(--color-error);
+}
+
+.btn-peligro:hover {
+    background-color: #a71d2a;
+}
+
+/* 6. Organización de componentes */
+.grupo-componentes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+/* 7. Formularios */
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--color-blanco);
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 3px rgba(37, 99, 166, 0.18);
+}
+
+/* 8. Tarjetas de información */
+.grupo-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    overflow: hidden;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.13);
+}
+
+.tarjeta-contenido {
+    padding: 20px;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: var(--color-primario);
+}
+
+/* 9. Etiquetas y alertas */
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge-alta {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+.badge-media {
+    color: #664d03;
+    background-color: #fff3cd;
+}
+
+.badge-baja {
+    color: #0f5132;
+    background-color: #d1e7dd;
+}
+
+.badge-exito {
+    color: #ffffff;
+    background-color: var(--color-exito);
+}
+
+/* 10. Pie de página */
+.pie-pagina {
+    margin-top: 40px;
+    padding: 22px;
+    color: var(--color-blanco);
+    text-align: center;
+    background-color: #263445;
+}
+
+.pie-pagina p {
+    margin: 4px;
+}
+
+/* 11. Diseño adaptable para tablets */
+@media (max-width: 768px) {
+    .grupo-tarjetas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 12. Diseño adaptable para celulares */
+@media (max-width: 480px) {
+    .grupo-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado h1 {
+        font-size: 1.7rem;
+    }
+
+    .seccion {
+        padding: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
