@@ -47,13 +47,6 @@ Actividad #5: Desarrollo de una Librería de Componentes UI (Design System).
 
 Desarrollo de Sistemas Informáticos - UTM, 2026.
 
-Desarrollo de Sistemas Informáticos - UTM, 2026.
-
-Desarrollo de Sistemas Informáticos - UTM, 2026.
-
-
-Desarrollo de Sistemas Informáticos - UTM, 2026.
-
 ## Validación HTML
 
 El archivo index.html fue revisado mediante el validador oficial W3C Nu HTML Checker.
